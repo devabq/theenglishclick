@@ -1,0 +1,137 @@
+html {
+  font-size: 2rem;
+}
+
+body {
+  background-color: #247ba0;
+}
+
+::-webkit-scrollbar {
+  width: 20px;
+}
+
+::-webkit-scrollbar-track {
+  background-color: transparent;
+}
+
+::-webkit-scrollbar-thumb {
+  background-color: #5d6270;
+  border-radius: 20px;
+  border: 6px solid transparent;
+  background-clip: content-box;
+}
+
+::-webkit-scrollbar-thumb:hover {
+  background-color: #abb3be;
+}
+
+nav,
+main {
+  max-width: 900px;
+  margin: auto;
+}
+
+nav {
+  background-color: #000;
+  border: 0.1rem solid #000;
+  border-radius: 0.3rem;
+}
+
+.nav-item {
+  background-color: black;
+}
+
+li {
+  margin-right: 1.5rem;
+}
+
+.nav-link {
+  color: white !important;
+  border-radius: 0.3rem;
+}
+
+.nav-link:hover {
+  color: #08b4f4 !important;
+}
+
+.active {
+  color: white !important;
+  background-color: #4497e6 !important;
+}
+
+.active:hover {
+  color: white !important;
+  background-color: #87cefa !important;
+}
+
+main {
+  padding: 0.5rem;
+}
+
+h6 {
+  overflow: hidden;
+  text-align: center;
+  color: white;
+}
+
+.hrdivider {
+  margin: 1rem 0 1rem 0;
+}
+
+.hrdivider:before,
+.hrdivider:after {
+  background-color: white;
+  content: "";
+  display: inline-block;
+  height: 1px;
+  position: relative;
+  vertical-align: middle;
+  width: 50%;
+}
+
+.hrdivider:before {
+  right: 0.5em;
+  margin-left: -50%;
+}
+
+.hrdivider:after {
+  left: 0.5em;
+  margin-right: -50%;
+}
+
+.main-item {
+  margin: 0.1rem;
+  border: 0.1rem solid #000;
+  border-radius: 0.3rem;
+  background-color: #000;
+  text-align: center;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  cursor: pointerback;
+  color: #08b4f4;
+}
+
+.main-item a {
+  text-decoration: none !important;
+  color: white;
+}
+
+.main-item:hover {
+  background-color: white;
+  color: black;
+  cursor: pointer;
+  border-color: white;
+}
+
+.main-item:hover a {
+  color: black;
+}
+/*# sourceMappingURL=main.css.map */
