@@ -3,7 +3,7 @@ html {
 }
 
 body {
-  background-color: #247ba0;
+  background-color: white;
 }
 
 ::-webkit-scrollbar {
@@ -32,13 +32,13 @@ main {
 }
 
 nav {
-  background-color: #000;
-  border: 0.1rem solid #000;
+  background-color: #202c34;
+  border: 0.1rem solid #202c34;
   border-radius: 0.3rem;
 }
 
 .nav-item {
-  background-color: black;
+  background-color: #202c34;
 }
 
 li {
@@ -101,9 +101,9 @@ h6 {
 
 .main-item {
   margin: 0.1rem;
-  border: 0.1rem solid #000;
+  border: 0.1rem solid #202c34;
   border-radius: 0.3rem;
-  background-color: #000;
+  background-color: #202c34;
   text-align: center;
   display: -webkit-box;
   display: -ms-flexbox;
