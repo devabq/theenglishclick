@@ -3,11 +3,6 @@
 
 /******************************
 
-COLOR PALETTE
-
-
-
-
 [Table of Contents]
 
 1. Fonts
@@ -23,11 +18,14 @@ COLOR PALETTE
 5. Home
 7. Page Section
 8. Buttons
-9. Popular
-10. Footer
-	10.1 Newsletter
-	10.2 Footer Content
-	10.3 Footer Copyright
+9. News
+	9.1 Comments
+	9.2 Leave Comment
+10. Sidebar
+11. Footer
+	11.1 Newsletter
+	11.2 Footer Content
+	11.3 Footer Copyright
 
 
 ******************************/
@@ -373,7 +371,7 @@ section
 }
 .main_nav_item a:hover
 {
-	color: #ffb606;
+	color: #08bcfc;
 }
 
 /*********************************
@@ -384,7 +382,7 @@ section
 {
 	width: 279px;
 	height: 100%;
-	background: #ffb606;
+	background: #08bcfc;
 }
 .header_side img
 {
@@ -426,7 +424,7 @@ section
 }
 .hamburger_container:hover i
 {
-	color: #ffb606;
+	color: #08bcfc;
 }
 
 /*********************************
@@ -504,7 +502,7 @@ section
 }
 .menu_item a:hover
 {
-	color: #ffb606;
+	color: #08bcfc;
 }
 .menu_close_container
 {
@@ -551,7 +549,7 @@ section
 .menu_close_container:hover .menu_close,
 .menu_close_container:hover .menu_close::after
 {
-	background: #ffb606;
+	background: #08bcfc;
 }
 
 /*********************************
@@ -577,7 +575,11 @@ section
 .menu_social_item
 {
 	display: inline-block;
-	margin-right: 30px;
+	margin-right: 27px;
+}
+.menu_social_item:last-child
+{
+	margin-right: 0px;
 }
 .menu_social_item a i
 {
@@ -585,7 +587,7 @@ section
 }
 .menu_social_item a i:hover
 {
-	color: #ffb606;
+	color: #08bcfc;
 }
 .menu_container.active .menu_social_container
 {
@@ -662,7 +664,7 @@ section
 	-ms-transform: translateX(-50%);
 	-o-transform: translateX(-50%);
 	transform: translateX(-50%);
-	background: #ffb606;
+	background: #08bcfc;
 	padding-top: 24px;
 	padding-bottom: 18px;
 	padding-left: 39px;
@@ -674,13 +676,8 @@ section
 	font-weight: 400;
 	color: #FFFFFF;
 	line-height: 0.5;
+	white-space: nowrap;
 }
-
-/*********************************
-5.1 Hero Slider
-*********************************/
-
-
 
 /*********************************
 7. Page Section
@@ -716,7 +713,7 @@ section
 	width: 55px;
 	height: 4px;
 	content: '';
-	background: #ffb606;
+	background: #08bcfc;
 }
 
 /*********************************
@@ -745,109 +742,137 @@ section
 }
 
 /*********************************
-9. Popular
+9. Contact
 *********************************/
 
-.popular
+.contact
 {
-
+	padding-top: 106px;
+	padding-bottom: 117px;
 }
-.course_boxes
+.contact_title
 {
-	margin-top: 68px;
-}
-.course_box
-{
-	margin-bottom: 108px;
-}
-.course_box:nth-last-child(-n+3)
-{
-	margin-bottom: 0px;
-}
-.card
-{
-	display: block;
-	background: #f8f9fb;
-	border: none;
-}
-.card-img-top
-{
-	border-top-left-radius: 0px;
-    border-top-right-radius: 0px;
-}
-.card-body
-{
-	padding-top: 0px;
-	padding-bottom: 0px;
-	padding-left: 15px;
-	padding-right: 15px;
-}
-.card-title
-{
-	margin-top: 55px;
-}
-.card-title a
-{
-	font-size: 22px;
+	font-size: 36px;
 	font-weight: 500;
 	color: #1a1a1a;
-	line-height: 1.2;
 }
-.card-title a:hover
+.contact_form_container
 {
-	color: #a5a5a5;
+	margin-top: 70px;
 }
-.card-text
-{
-	font-size: 14px;
-	font-weight: 500;
-	color: #a5a5a5;
-	margin-top: -12px;
-}
-.price_box
+.input_field
 {
 	width: 100%;
-	height: 67px;
-	background: #eaebec;
-	margin-top: 41px;
-	padding-left: 35px;
+	background: #f8f4f4;
+	border: solid 2px transparent;
+	margin-bottom: 24px;
+	height: 42px;
+	padding-left: 33px;
 }
-.course_author_image
+.input_field:focus
 {
-	width: 46px;
-	height: 46px;
-	border-radius: 50%;
-	overflow: hidden;
+	outline: none !important;
+	border-color: #08bcfc;
 }
-.course_author_name
+.text_field
 {
+	width: 100%;
+	height: 189px;
+	background: #f8f4f4;
+	border: solid 2px transparent;
+	padding-left: 33px;
+	margin-bottom: 24px;
+}
+.text_field:focus
+{
+	outline: none !important;
+	border-color: #08bcfc;
+}
+.contact_send_btn
+{
+	width: 100%;
+	height: 48px;
+	background: #08bcfc;
 	font-size: 14px;
-	font-weight: 500;
-	color: #1a1a1a;
-	padding-left: 20px;
-	margin-top: 7px;
-}
-.course_author_name span
-{
-	color: #a5a5a5;
-}
-.course_price
-{
-	width: 67px;
-	height: 67px;
-	background: #ffb606;
-	margin-left: auto;
-}
-.course_price span
-{
+	font-weight: 700;
+	text-transform: uppercase;
 	color: #FFFFFF;
-	font-size: 18px;
-	font-weight: 500;
-	margin-top: 7px;
+	cursor: pointer;
+	border: none;
+}
+.contact_send_btn:focus
+{
+	outline: solid 1px #08bcfc;
+	border: green !important;
 }
 
 /*********************************
-10. Footer
+10. About
+*********************************/
+
+.about_title
+{
+	font-size: 36px;
+	font-weight: 500;
+	color: #1a1a1a;
+}
+.about_text
+{
+	margin-top: 20px;
+}
+.contact_info
+{
+	margin-top: 64px;
+	padding-left: 46px;
+}
+.contact_info_item
+{
+	font-size: 14px;
+	font-weight: 400;
+	color: #a5a5a5;
+	margin-bottom: 22px;
+}
+.contact_info_item:last-child
+{
+	margin-bottom: 0px;
+}
+.contact_info_icon
+{
+	display: inline-block;
+	width: 24px;
+	height: 24px;
+	vertical-align: middle;
+	margin-right: 10px;
+}
+.contact_info_icon img
+{
+	width: 100%;
+}
+
+/*********************************
+11. Google Map
+*********************************/
+
+#google_map
+{
+	width: 100%;
+	height: 532px;
+	margin-top: 117px;
+}
+.map_container
+{
+	width: 100%;
+	height: 100%;
+	overflow: hidden;
+}
+#map
+{
+	width: 100%;
+	height: calc(100% + 30px);
+}
+
+/*********************************
+12. Footer
 *********************************/
 
 .footer
@@ -862,7 +887,7 @@ section
 }
 
 /*********************************
-10.1 Newsletter
+12.1 Newsletter
 *********************************/
 
 .newsletter
@@ -886,14 +911,14 @@ section
 }
 .newsletter_email:focus
 {
-	outline: solid 2px #ffb606;
+	outline: solid 2px #08bcfc;
 }
 .newsletter_submit_btn
 {
 	width: 164px;
 	height: 42px;
 	border: none;
-	background: #ffb606;
+	background: #08bcfc;
 	color: #FFFFFF;
 	font-size: 14px;
 	font-weight: 500;
@@ -905,7 +930,7 @@ section
 }
 
 /*********************************
-10.2 Footer Content
+12.2 Footer Content
 *********************************/
 
 .footer_content 
@@ -955,7 +980,7 @@ section
 }
 .footer_list_item a:hover
 {
-	color: #ffb606;
+	color: #08bcfc;
 }
 .footer_contact_item
 {
@@ -982,7 +1007,7 @@ section
 }
 
 /*********************************
-10.3 Footer Copyright
+12.3 Footer Copyright
 *********************************/
 
 .footer_bar
@@ -996,7 +1021,7 @@ section
 }
 .footer_social .menu_social_item a i:hover
 {
-	color: #ffb606;
+	color: #08bcfc;
 }
 .footer_social .menu_social_item:last-child
 {
