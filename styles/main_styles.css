@@ -670,6 +670,8 @@ section
 	background-repeat: no-repeat;
 	background-size: cover;
 	background-position: center center;
+	filter: blur(3px);
+	-webkit-filter: blur(3px);
 }
 .hero_slide_container
 {
