@@ -818,6 +818,7 @@ section
 }
 .about_text
 {
+	font-size: 24px;
 	margin-top: 20px;
 }
 .contact_info
