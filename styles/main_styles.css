@@ -1358,7 +1358,6 @@ input:last-of-type
 .footer
 {
 	width: 100%;
-	padding-top: 86px;
 	background: #1a1a1a;
 }
 .footer .section_title h1
@@ -1415,8 +1414,8 @@ input:last-of-type
 
 .footer_content 
 {
-	padding-top: 80px;
-	padding-bottom: 83px;
+	padding-top: 30px;
+	padding-bottom: 33px;
 	border-bottom: solid 2px #4d4e4e;
 }
 .footer_content .logo_container
