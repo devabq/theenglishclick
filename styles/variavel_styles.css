@@ -72,10 +72,10 @@ ul
 p
 {
 	font-family: 'Roboto', sans-serif;
-	font-size: 14px;
+	font-size: 15px;
 	line-height: 2.29;
 	font-weight: 400;
-	color: #a5a5a5;
+	color: #8f8f8f;
 	-webkit-font-smoothing: antialiased;
 	-webkit-text-shadow: rgba(0,0,0,.01) 0 0 1px;
 	text-shadow: rgba(0,0,0,.01) 0 0 1px;
@@ -1028,3 +1028,27 @@ section
 {
 	margin-right: 0px;
 }
+.button {
+	border: none;
+	color: white;
+	padding: 16px 32px;
+	text-align: center;
+	text-decoration: none;
+	display: inline-block;
+	font-size: 16px;
+	margin: 4px 2px;
+	transition-duration: 0.4s;
+	cursor: pointer;
+  }
+  
+  .button1 {
+	background-color: white; 
+	color: black; 
+	border: 2px solid #36d0ff;
+  }
+  
+  .button1:hover {
+	background-color: #0047d4;
+	color: white;
+  }
+  
